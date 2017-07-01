@@ -5,13 +5,19 @@ int main(void)
 	int x = 0;
 	int index;
 	char znak;
-	for(index = 0, znak = 'a'; index <26; index++, x++)
+	printf("zapiszemy sobie tablice\n");
+	for(index = 0, znak = 'a'; index <26; index++)
 		{
-		putchar(znak);
-		scanf("%c", &tablica[index]);
+		tablica[0] = znak;
+		//scanf("%c", &tablica[index]);
+		printf("%c", znak);
+		znak++;
 		}
-	printf("koniec petli\nwyswietlenie zawartosci\n");
-	printf("%s\n", tablica);
+	printf("\nkoniec petli\nwyswietlenie zawartosci\n");
+	for(index = 0; index<26 ; index++)
+		{
+		printf("%c", tablica[index]);
+		}
 	printf("koniec\n");
 	return 0;
 }
