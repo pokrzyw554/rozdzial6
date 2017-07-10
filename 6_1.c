@@ -8,7 +8,7 @@ int main(void)
 	printf("zapiszemy sobie tablice\n");
 	for(index = 0, znak = 'a'; index <26; index++)
 		{
-		tablica[0] = znak;
+		tablica[index] = znak;
 		//scanf("%c", &tablica[index]);
 		printf("%c", znak);
 		znak++;
@@ -18,6 +18,6 @@ int main(void)
 		{
 		printf("%c", tablica[index]);
 		}
-	printf("koniec\n");
+	printf("\nkoniec\n");
 	return 0;
 }
